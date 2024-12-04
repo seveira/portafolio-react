@@ -1,0 +1,227 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Variables de colores */
+:root {
+    --color-primary: #1e90ff; 
+    --color-secondary: #ffd700; 
+    --color-background: #3c11d8;
+    --color-text: #333; 
+    --color-white: #fff; 
+    --color-link-hover: #ffd700; 
+    --color-rosada: rgb(210, 17, 146);
+    --color-negro: #000; 
+}
+
+/* Contenedor principal */
+.Primerafila {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-rosada);
+    color: var(--color-white);
+    padding: 10px;
+    border-bottom: 5px solid var(--color-primary);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    background-color: var(--color-negro);
+}
+
+.main-nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--color-link-hover);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./img/fondo.jpg');
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.6;
+    border-bottom: 5px solid var(--color-primary);
+}
+
+.left-column {
+    flex-shrink: 0;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.fotodeperfil img {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+/* Parte de proyecto */
+.contentproyecto {
+    display: flex;
+    padding: 20px;
+}
+
+/* Estilos de cada sección */
+.proyecto1 {
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--color-text);
+    border-radius: 10px;
+    color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+}
+
+.Detalle {
+    width: 70%;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-image: url('./img/w2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-negro);
+}
+
+/* Sección de "quienes somos" */
+.content2 {
+    padding: 20px;
+    background-image: url('./img/s2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 h2 {
+    font-size: 24px;
+    color: var(--color-negro);
+    margin-top: 10px;
+}
+
+.content2 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-negro);
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales */
+.contacto {
+    background-image: url('./img/evento2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    color: var(--color-negro);
+    border-radius: 5px;
+}
+
+.contacto form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto form label {
+    margin-bottom: 10px;
+    color: var(--color-negro);
+}
+
+.contacto form input,
+.contacto form textarea,
+.contacto form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.contacto form input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contacto form input[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.footer {
+    background-color: var(--color-rosada);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon1 i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-nav-list li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-nav-list li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-nav-list li a:hover {
+    color: var(--color-negro);
+}
+
+.nav-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
